@@ -1,0 +1,1 @@
+# autoservis-wp-plugin
