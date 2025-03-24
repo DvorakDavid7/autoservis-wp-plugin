@@ -12,7 +12,7 @@ $errors = !empty($_GET['errors']) ? json_decode(stripslashes(urldecode($_GET['er
 $old_data = !empty($_GET['data']) ? json_decode(stripslashes(urldecode($_GET['data'])), true) : [];
 ?>
 
-<form class="m-10" method="POST" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+<form method="POST" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
     <input type="hidden" name="action" value="submit_reservation">
     <?php wp_nonce_field('reservation_nonce', 'reservation_nonce_field'); ?>
 

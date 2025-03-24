@@ -1,0 +1,35 @@
+.call-button {
+    --animate-duration: 0.5s;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: #0dd542;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+.call-button:hover {
+    background-color: #1f482afc;
+}
+
+@media (min-width: 1024px) {
+    .call-button {
+        width: 96px;
+        height: 96px;
+    }
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
